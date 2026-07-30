@@ -1,0 +1,196 @@
+<div class="quiz-scope"><!-- ===== MathJax ===== --><script>
+    window.MathJax = window.MathJax || {};
+    window.MathJax.tex = window.MathJax.tex || {};
+    window.MathJax.tex.inlineMath = [['$', '$'], ['\\(', '\\)']];
+    window.MathJax.tex.displayMath = [['\\[', '\\]']];
+  </script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><!-- ===== STYLE: giữ nguyên mẫu đã chốt (CHỈ LÀM CHỮ RÕ HƠN) ===== -->
+<style type="text/css">.quiz-scope{
+      font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+      background:#0d1117;
+      /* chữ rõ hơn: tăng tương phản */
+      color:#e6edf3;
+      padding:20px;
+      line-height:1.6;
+
+      /* chống LMS làm mờ chữ */
+      opacity:1;
+      filter:none;
+      text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .quiz-scope *{box-sizing:border-box}
+    .quiz-scope .header{
+      text-align:center;
+      font-size:2.1em;
+      font-weight:800;
+      color:#00ffc8;
+      margin-bottom:26px;
+      /* giảm glow để bớt “nhòe” chữ */
+      text-shadow:0 0 4px rgba(0,255,200,.35);
+      letter-spacing:.2px;
+    }
+    .quiz-scope .content-container{max-width:820px;margin:auto}
+    .quiz-scope .card{
+      padding:22px;
+      border-radius:14px;
+      /* tăng độ tách nền để chữ rõ hơn, vẫn giữ tông */
+      background:rgba(255,255,255,.075);
+      margin-bottom:22px;
+      color:#e6edf3;
+    }
+    .quiz-scope .card h3{
+      margin:0 0 14px;
+      border-bottom:1px solid rgba(230,237,243,.25);
+      padding-bottom:8px;
+      color:#f0f6fc;
+      font-weight:800;
+    }
+    .quiz-scope .bai-1{border:1px solid #58a6ff}
+    .quiz-scope .bai-2{border:1px solid #00ff99}
+    .quiz-scope .bai-3{border:1px solid #f7931a}
+    .quiz-scope .bai-4{border:1px solid #ff7b7b}
+    .quiz-scope .giai-formula{
+      background:#21262d;
+      padding:12px;
+      border-radius:8px;
+      margin:10px 0;
+      text-align:center;
+      /* chữ trong khung công thức rõ hơn */
+      color:#f0f6fc;
+      border:1px solid rgba(240,246,252,.08);
+    }
+    .quiz-scope .toggle-wrap{margin-top:10px}
+    .quiz-scope .btn-toggle{
+      border:1px solid #30363d;
+      background:#161b22;
+      /* tăng độ sáng chữ nút */
+      color:#f0f6fc;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+      cursor:pointer;
+    }
+    .quiz-scope .btn-toggle[aria-expanded="true"]{color:#00ffc8;border-color:#00ffc8}
+    .quiz-scope .bai-giai{
+      display:none;
+      border-top:1px dashed #30363d;
+      margin-top:12px;
+      padding-top:12px;
+      color:#e6edf3;
+    }
+    .quiz-scope .bai-giai.is-open{display:block}
+    .quiz-scope mjx-container{max-width:100%;overflow-x:auto}
+</style>
+<div class="header">📊 B&Agrave;I &Ocirc;N TẬP KIỂM ĐỊNH - X&Aacute;C SUẤT - PH&Acirc;N PHỐI CHUẨN (TKUD)</div>
+
+<div class="content-container"><!-- ================= BÀI 1 ================= -->
+<div class="card bai-1" id="bai1">
+<h3>🔹 B&agrave;i 1. Kiểm định so s&aacute;nh hai tỉ lệ</h3>
+
+<p>Một khảo s&aacute;t kh&aacute;ch h&agrave;ng được thực hiện tại hai si&ecirc;u thị lớn trong th&agrave;nh phố. Tại si&ecirc;u thị X, khảo s&aacute;t 520 kh&aacute;ch th&igrave; c&oacute; 208 kh&aacute;ch h&agrave;i l&ograve;ng. Tại si&ecirc;u thị Y, khảo s&aacute;t 340 kh&aacute;ch th&igrave; c&oacute; 102 kh&aacute;ch h&agrave;i l&ograve;ng. Hỏi tỉ lệ kh&aacute;ch h&agrave;ng h&agrave;i l&ograve;ng của hai si&ecirc;u thị c&oacute; như nhau kh&ocirc;ng? Cho biết mức &yacute; nghĩa l&agrave; $5\%$.</p>
+
+<div class="toggle-wrap"><button aria-expanded="false" class="btn-toggle" data-toggle-solution="sol1">Ẩn / hiện lời giải</button></div>
+
+<div class="bai-giai" id="sol1">
+<p><b>&Yacute; 1.</b> Đặt giả thiết kiểm định:</p>
+
+<p>$H: p_1 = p_2$</p>
+
+<div class="giai-formula">\[ \varphi(t_\alpha)=\frac{1-\alpha}{2}=0{,}475 \Rightarrow t_\alpha = 1{,}96 \]</div>
+
+<p>Tỉ lệ chung:</p>
+
+<div class="giai-formula">\[ p_0=\frac{208+102}{520+340}=\frac{31}{86}\approx0{,}3605 \]</div>
+
+<p>Thống k&ecirc; kiểm định:</p>
+
+<div class="giai-formula">\[ t=\frac{|f_1-f_2|} {\sqrt{p_0(1-p_0)\left(\frac1{n_1}+\frac1{n_2}\right)}} \approx 2{,}9863 \]</div>
+
+<p><b>&Yacute; 2. Kết luận:</b></p>
+
+<p>V&igrave; $t &gt; t_\alpha$ n&ecirc;n b&aacute;c bỏ giả thiết $H$. Tỉ lệ kh&aacute;ch h&agrave;ng h&agrave;i l&ograve;ng của hai si&ecirc;u thị kh&ocirc;ng như nhau, v&agrave; do $f_1 &gt; f_2$ n&ecirc;n si&ecirc;u thị X c&oacute; tỉ lệ h&agrave;i l&ograve;ng cao hơn.</p>
+</div>
+</div>
+<!-- ================= BÀI 2 ================= -->
+
+<div class="card bai-2" id="bai2">
+<h3>🟢 B&agrave;i 2. &Yacute; nghĩa kỳ vọng</h3>
+
+<p>Một cửa h&agrave;ng b&aacute;n một chiếc m&aacute;y lạnh A th&igrave; lời 850000 đồng, nhưng nếu phải bảo h&agrave;nh th&igrave; lỗ 1000000 đồng. Biết x&aacute;c suất phải bảo h&agrave;nh l&agrave; $p=15\%$. T&iacute;nh mức l&atilde;i trung b&igrave;nh khi b&aacute;n 1000 m&aacute;y.</p>
+
+<div class="toggle-wrap"><button aria-expanded="false" class="btn-toggle" data-toggle-solution="sol2">Ẩn / hiện lời giải</button></div>
+
+<div class="bai-giai" id="sol2">
+<p><b>&Yacute; 1.</b> Gọi $X$ l&agrave; số tiền lời khi b&aacute;n 1 m&aacute;y lạnh.</p>
+
+<div class="giai-formula">$X=850000$ (x&aacute;c suất $0{,}85$), &nbsp; $X=-1000000$ (x&aacute;c suất $0{,}15$)</div>
+
+<p><b>&Yacute; 2.</b> Kỳ vọng:</p>
+
+<div class="giai-formula">\[ E(X)=850000\cdot0{,}85-1000000\cdot0{,}15=572500 \]</div>
+
+<p><b>&Yacute; 3.</b> Nếu b&aacute;n 1000 m&aacute;y:</p>
+
+<div class="giai-formula">\[ 572500\times1000=572\,500\,000 \]</div>
+
+<p><b>Kết luận:</b> L&atilde;i trung b&igrave;nh khoảng <b>572,5 triệu đồng</b>.</p>
+</div>
+</div>
+<!-- ================= BÀI 3 ================= -->
+
+<div class="card bai-3" id="bai3">
+<h3>🟠 B&agrave;i 3. Bảng ph&acirc;n phối x&aacute;c suất</h3>
+
+<p>Cho BNN rời rạc $X$ c&oacute; bảng ph&acirc;n phối:</p>
+
+<div class="giai-formula">\[ \begin{array}{c|ccccc} X &amp; -1 &amp; 0 &amp; 1 &amp; 3 &amp; 5\\ \hline P &amp; 3a &amp; a &amp; 0{,}1 &amp; 2a &amp; 0{,}3 \end{array} \]</div>
+
+<p>T&iacute;nh x&aacute;c suất \( P(-1\lt X\le 3)\)&nbsp;</p>
+
+<div class="toggle-wrap"><button aria-expanded="false" class="btn-toggle" data-toggle-solution="sol3">Ẩn / hiện lời giải</button></div>
+
+<div class="bai-giai" id="sol3">
+<p><b>&Yacute; 1.</b> Tổng x&aacute;c suất bằng 1:</p>
+
+<div class="giai-formula">\[ 3a+a+0{,}1+2a+0{,}3=1 \Rightarrow a=0{,}1 \]</div>
+
+<p><b>&Yacute; 2.</b> T&iacute;nh x&aacute;c suất: \( P(-1\lt X\le 3)\)</p>
+
+<div class="giai-formula">\[ P(-1\lt X\le 3)=P(X=0)+P(X=1)+P(X=3)=0{,}1+0{,}1+0{,}2=0{,}4 \]</div>
+</div>
+</div>
+<!-- ================= BÀI 4 ================= -->
+
+<div class="card bai-4" id="bai4">
+<h3>🔴 B&agrave;i 4. Ph&acirc;n phối chuẩn</h3>
+
+<p>Trọng lượng sản phẩm c&oacute; ph&acirc;n phối chuẩn với $\mu=5$ kg, $\sigma=0{,}1$ kg. T&iacute;nh $P(4{,}9\lt X\lt 5{,}2)$.</p>
+
+<div class="toggle-wrap"><button aria-expanded="false" class="btn-toggle" data-toggle-solution="sol4">Ẩn / hiện lời giải</button></div>
+
+<div class="bai-giai" id="sol4">
+<div class="giai-formula">\[ P(4{,}9\lt X\lt 5{,}2)=\varphi(2)-\varphi(-1) \]</div>
+
+<div class="giai-formula">\[ P=0{,}4772-(-0{,}3413)=0{,}8185 \]</div>
+</div>
+</div>
+</div>
+<!-- ===== JS TOGGLE (SCOPED) ===== --><script>
+    (function(){
+      const SCOPE=document.querySelector('.quiz-scope');
+      document.addEventListener('click',function(e){
+        if(!SCOPE||!SCOPE.contains(e.target))return;
+        const btn=e.target.closest('[data-toggle-solution]');
+        if(!btn)return;
+        const id=btn.getAttribute('data-toggle-solution');
+        const panel=SCOPE.querySelector('#'+CSS.escape(id));
+        if(!panel)return;
+        const open=panel.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded',open?'true':'false');
+        if(open&&window.MathJax&&window.MathJax.typesetPromise){
+          MathJax.typesetPromise([panel]).catch(()=>{});
+        }
+      });
+    })();
+  </script></div>
